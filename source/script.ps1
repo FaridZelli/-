@@ -30,8 +30,8 @@ for($counter = 0; $counter -lt $frames.Count; $counter++)
 ## Prepare the screen
 $counter = 0
 $maxCounter = $frames.Count - 1
-$host.UI.RawUI.BackgroundColor = "White"
-$host.UI.RawUI.ForegroundColor = "Black"
+$host.UI.RawUI.BackgroundColor = "Black"
+$host.UI.RawUI.ForegroundColor = "White"
 try
 {
     $host.UI.RawUI.WindowSize = New-Object System.Management.Automation.Host.Size 83,45
@@ -79,7 +79,7 @@ try
         if($player.HasError -or ($player.ReadyState -eq 4)) { break }
     }
     
-    Start-Sleep -m 1600
+    Start-Sleep -m 1180
     Clear-Host
     
     $host.UI.RawUI.CursorPosition = New-Object System.Management.Automation.Host.Coordinates `
@@ -115,8 +115,8 @@ finally
     Clear-Host
     $frames[-1] -split "`t"
     "`n"
-    "                        Happy Scripting from PowerShell..."
-    "                                 and Rick ASCII!"
+    "                        You know the rules..."
+    "                             And so do I"
     "`n`n`n"
     $player.Stop()
     $bgPowerShell.Dispose()
