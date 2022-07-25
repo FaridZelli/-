@@ -79,3 +79,9 @@ Never gonna tell a lie and hurt you
 ```
 iex (New-Object Net.WebClient).DownloadString("https://raw.githubusercontent.com/FaridZelli/-/main/source/script.ps1")
 ```
+   
+**Changelog:**
+- Inverted the colors to avoid artifacts
+- Added a both smaller and higher quality audio track
+- Now loads off of this GitHub repo without external dependencies
+- Some other things
